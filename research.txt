@@ -1,4 +1,0 @@
-every point is labeled by its position from its origin and when rendering it is calculated by where it is from the focal point
-camera has position and direction focla point is the infront of camera
-somehow have to find position of points relative to a dynamic plane
-	subtract the plane rotation from the point position
