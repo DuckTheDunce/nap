@@ -2,7 +2,9 @@ struct Transformation{
 	matrix:[[i32; 3];3]
 }
 
-impl Transformation
+impl Transformation{
+	pub fn apply()
+}
 
 struct Rotation{
 	matrixX:[[f32;3];3],
