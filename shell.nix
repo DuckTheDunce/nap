@@ -3,6 +3,7 @@
 pkgs.mkShell {
   # nativeBuildInputs is typically used for tools needed to run or build the project.
   nativeBuildInputs = with pkgs; [
+    rust-analyzer
     rustc
     cargo
     SDL2
