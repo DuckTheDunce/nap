@@ -18,16 +18,24 @@ impl Pixel{
 }
 
 pub struct PixelLayer{
-	pixels:Vec<Pixel>,
-	width:u16
+	pub pixels:Vec<Pixel>,
+	pub width:u16
 }
 
 impl PixelLayer{
-	pub fn pixels(self) -> Vec<Pixel>{
-		return self.pixels;
-	}
+	/*pub fn to_arr_rgba(self) -> Vec::<u8>{
+		let mut buf:Vec<u8> = Vec::new();
+		for pixel in self.pixels{
+			buf.push(pixel.r);
+			buf.push(pixel.g);
+			buf.push(pixel.b);
+			buf.push(pixel.a);
+		}
+		return buf;
+	}*/
 }
 
+#[derive(Clone)]
 pub struct Camera{
 	pos:Point,
 	focal_point:Point,

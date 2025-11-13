@@ -1,5 +1,6 @@
 use crate::point::Point;
 
+#[derive(Clone)]
 pub struct Triangle{
 	point1:Point,
 	point2:Point,

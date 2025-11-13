@@ -15,15 +15,14 @@ fn main() {
 	let f_pos = point::Point::new(1, 0, 0);
     let camera = render::Camera::new(c_pos, f_pos, 5.0);
 
-    let t = camera.render(vec![t1], 16, 16);
+    let t = camera.clone().render(vec![t1.clone()], 32, 18);
 
-	let pixel_vec = t.pixels();
+	let pixel_vec = t.pixels;
 	for i in 0..pixel_vec.len(){
-		if i%16 == 0{
+		if i%t.width as usize == 0{
 			println!();
 		}
     	print!("{}", "o ".truecolor(pixel_vec[i].r, pixel_vec[i].g, pixel_vec[i].b));
 		
 	}
-    
 }
